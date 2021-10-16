@@ -8,7 +8,7 @@ const ExpenseList = (props) => {
     return <h2 className="expense-list__fallback">Found no expenses.</h2>;
 
   return (
-    <ul className="expense-list">
+    <ul style={{listStyleType:"none"}} className="expense-list">
       {props.items.map((expense) => (
         <ExpenseItem
           key={expense.id}
